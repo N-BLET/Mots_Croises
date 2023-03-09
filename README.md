@@ -6,11 +6,10 @@ Projet de jeu de Mots Croisés en POO. Notions abordées : classe, objet, hérit
 ### 1 Objectif du projet
 Le projet consiste à réaliser un logiciel de mots croisés. Ce jeu consiste à remplir les cases blanches d’une grille par des lettres de façon à constituer des mots par une lecture horizontale ou verticale. Si vous ne connaissez pas bien les mots croisés, consultez l’article de Wikipédia : https://fr.wikipedia.org/wiki/Mots_crois%C3%A9s
 
-Le logiciel lira la spécification d’une grille avec ses définitions et ses solutions qui sera lue dans un fichier ou sur le web, via une classe qui vous sera fournie. Il utilisera pour son interface utilisateur les conventions utilisées sur le site du journal 20 minutes (https://www.20minutes.fr/services/mots-croises).
-
 La grille est présentée avec des cases blanches, des cases noires ; les colonnes sont identifiées par une lettre majuscule et les lignes par un nombre.
-
-<img align = "center" width = "20%" src = "https://github.com/N-BLET/Mots_Croises/blob/master/Grille_Vide.png"/>
+<p align="center">
+  <img width = "20%" src = "https://github.com/N-BLET/Mots_Croises/blob/master/Grille_Vide.png"/>
+</p>
 
 On voit par exemple la case en haut à gauche a les coordonnées A1 (colonne A, ligne 1) et la dernière case en bas à droite est H12 (colonne H, ligne 12).
 
@@ -126,10 +125,12 @@ L’autre opération sur les mots, effacer un mot écrit, est complexe car il ne
 
 Dans cette dernière étape du projet, il s’agit de finaliser un jeu de mots-croises opérationnel.
 Nous vous proposons d’ajouter l’opération d’effacement d’un mot au jeu. Cette opération ne consiste pas simplement à effacer toutes les lettres du mot, car certaines de ces lettres peuvent apparaitre dans un autre mot qu’il ne faut pas effacer. Par exemple, si l’on veut effacer un mot dans l’orientation horizontale, certaines lettres apparaissent dans des mots verticaux et il ne faut pas les effacer. Pour déterminer si une lettre appartient ou non à un mot vertical, il faut voir s’il reste des cases vides au-dessus ou en-dessous de la lettre.
- 
+
 Prenons un exemple. Voici un extrait de mot-croise.
 
+<p align="center">
 <img align = "center" width = "20%" src = "https://github.com/N-BLET/Mots_Croises/blob/master/Exemple_Suppression.png"/>
+</p>
 
 Si l’on veut effacer le mot horizontal ligne 7, il faut effacer le I et le E, mais pas le R qui appartient au mot vertical ARE qui ne doit pas être efface. Ce qui fait la différence entre les deux situations, c’est qu’il y a des cases blanches dans les colonnes A et C, autour du mot à effacer (par exemple les cases A5, A8, C5 et C8 alors qu’il n’y a pas de cases blanches entre B5 et B9.
 
