@@ -10,7 +10,7 @@ Le logiciel lira la spécification d’une grille avec ses définitions et ses s
 
 La grille est présentée avec des cases blanches, des cases noires ; les colonnes sont identifiées par une lettre majuscule et les lignes par un nombre.
 
-![Modèle grille](https://github.com/N-BLET/Mots_Croises/blob/master/Grille_Vide.png)
+<img align = "center" width = "20%" src = "https://github.com/N-BLET/Mots_Croises/blob/master/Grille_Vide.png"/>
 
 On voit par exemple la case en haut à gauche a les coordonnées A1 (colonne A, ligne 1) et la dernière case en bas à droite est H12 (colonne H, ligne 12).
 
@@ -129,7 +129,7 @@ Nous vous proposons d’ajouter l’opération d’effacement d’un mot au jeu.
  
 Prenons un exemple. Voici un extrait de mot-croise.
 
-![Modèle grille](https://github.com/N-BLET/Mots_Croises/blob/master/Exemple_Suppression.png)
+<img align = "center" width = "20%" src = "https://github.com/N-BLET/Mots_Croises/blob/master/Exemple_Suppression.png"/>
 
 Si l’on veut effacer le mot horizontal ligne 7, il faut effacer le I et le E, mais pas le R qui appartient au mot vertical ARE qui ne doit pas être efface. Ce qui fait la différence entre les deux situations, c’est qu’il y a des cases blanches dans les colonnes A et C, autour du mot à effacer (par exemple les cases A5, A8, C5 et C8 alors qu’il n’y a pas de cases blanches entre B5 et B9.
 
